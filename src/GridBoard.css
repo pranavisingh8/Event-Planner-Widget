@@ -1,0 +1,44 @@
+/* src/GridBoard.css */
+.grid-board {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 10px;
+    height: 100%;
+  }
+  
+  .grid-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  
+  .grid-item.selected {
+    border-color: #61dafb;
+    background-color: #e0f7fa;
+  }
+  
+  .grid-item.Chair {
+    background-color: #ffeb3b;
+  }
+  
+  .grid-item.Table {
+    background-color: #4caf50;
+  }
+  
+  .grid-item.Stage {
+    background-color: #f44336;
+  }
+  
+  .grid-item.Podium {
+    background-color: #3f51b5;
+  }
+  
+  .grid-item.Lighting {
+    background-color: #9c27b0;
+  }
+  

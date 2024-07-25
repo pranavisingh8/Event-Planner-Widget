@@ -1,0 +1,142 @@
+/* src/ESPLayout.css */
+.esp-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f0f4f8; /* Soft background color */
+}
+
+.esp-header {
+  background-color: #00796b; /* Calming teal */
+  padding: 10px; /* Adjust height as needed */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space out the header items */
+}
+
+.esp-header h1 {
+  margin: 0; /* Remove default margin from h1 */
+}
+
+.logo {
+  margin-left: 20px; /* Ensure logo is on the left side */
+}
+
+.logo img {
+  width: 100px; /* Adjust the size of the logo */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.esp-content {
+  display: flex;
+  flex: 1;
+}
+
+.esp-sidebar {
+  width: 200px;
+  background-color: #ffffff; /* White background for the sidebar */
+  padding: 20px;
+  border-right: 1px solid #ddd; /* Soft border */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+.theme-dropdown {
+  margin-bottom: 20px; /* Space below the dropdown */
+}
+
+.theme-dropdown label {
+  display: block; /* Ensure label is on its own line */
+  margin-bottom: 5px; /* Space below the label */
+}
+
+.theme-dropdown select {
+  width: 100%; /* Full width for the dropdown */
+  padding: 5px;
+}
+
+.esp-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.esp-sidebar li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.esp-sidebar img {
+  width: 50px; /* Adjust image size as needed */
+  height: auto;
+  margin-right: 10px; /* Space between image and text */
+}
+
+.esp-main {
+  flex: 1;
+  background-color: #ffffff; /* White background for the main content */
+  border: 1px solid #ddd; /* Soft border */
+  margin: 20px;
+  padding: 20px;
+  position: relative; /* Allows positioning of buttons */
+}
+
+.grid-container {
+  position: relative;
+  background-color: #ffffff; /* White background for the grid */
+  border: 1px solid #ddd; /* Border around the grid */
+  height: 100%; /* Ensure it fills the available space */
+  background-image: linear-gradient(to right, #ddd 1px, transparent 1px), /* Vertical lines */
+                    linear-gradient(to bottom, #ddd 1px, transparent 1px); /* Horizontal lines */
+  background-size: 20px 20px; /* Adjust size to control grid spacing */
+}
+
+/* Button styles */
+.esp-footer {
+  display: flex;
+  justify-content: center;
+  padding: 10px; /* Padding for footer */
+  background-color: #00796b; /* Calming teal */
+  color: white;
+  position: absolute;
+  bottom: 0; /* Position footer at the bottom */
+  width: calc(100% - 40px); /* Full width minus margins */
+}
+
+.esp-footer button {
+  background-color: #4caf50; /* Soft green */
+  border: none;
+  padding: 6px 12px; /* Adjust size for a soothing look */
+  margin: 0 5px; /* Space between buttons */
+  cursor: pointer;
+  color: white; /* Button text color */
+}
+
+.esp-footer button:hover {
+  background-color: #388e3c; /* Slightly darker green on hover */
+}
+
+.undo-redo-buttons {
+  position: absolute;
+  top: 50px; /* Adjusted value to move buttons down */
+  right: 20px; /* Adjusted value to align buttons to the right */
+  display: flex; /* Use flexbox for alignment */
+  gap: 10px; /* Space between buttons */
+}
+
+.undo-redo-buttons button {
+  background: none;
+  border
+ /* Continuing src/ESPLayout.css */
+ .undo-redo-buttons button {
+  background: none;
+  border: none;
+  font-size: 24px; /* Adjust size as needed */
+  cursor: pointer;
+  color: #00796b; /* Matching color with header */
+}
+
+.undo-redo-buttons button:hover {
+  color: #004d40; /* Darker shade on hover */
+}
+}
